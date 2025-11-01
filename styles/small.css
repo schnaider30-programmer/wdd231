@@ -1,0 +1,226 @@
+:root {
+    --bright-red: #FF2321;
+    --dark-grey: #3C3C3C;
+    --light-beige: #F4EDE6;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+    --heading-font: 'Playfair Display', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    max-width: 1200px;
+    margin: 5px auto;
+}
+
+/* ********** Header ***************** */
+
+header {
+    display: grid;
+    grid-template-columns: 55px auto 44px;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    margin: 5px 0 5px 10px;
+    width: 100%;
+    height: auto;
+    background-color: var(--dark-grey);
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+header span {
+    font-family: var(--primary-font);
+    color: var(--dark-grey);
+    font-size: 1.2rem;
+}
+
+/* ***************** Navigation ***************** */
+
+.navigation {
+    display: none;
+    width: 100%; 
+    background-color: var(--light-beige);
+}
+
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style: none;
+}
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 10px;
+    font-family: var(--heading-font);
+    color: var(--dark-grey);
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    background-color: #e8d9c7;
+}
+
+.navigation .current {
+    background-color: #e8d9c7;
+}
+
+/* ************** Menu Button *****************  */
+
+.hamburger {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger:hover {
+    background-color: #ddd;
+}
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* ************ Heading ****************** */
+
+h1, h2 {
+    font-family: var(--heading-font);
+    padding: 10px;
+    color: var(--dark-grey);
+}
+
+h1 {
+    margin: 0;
+}
+
+ h2 {
+    background-color: var(--dark-grey);
+    color: var(--light-beige);
+    text-align: center;
+    font-size: 1.5rem;
+ }
+
+ /* ********** About Section ****************** */
+
+ .about-section p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    text-transform: none;
+    padding: 10px;
+ }
+
+ /* ***********************Photo Section ************** */
+
+ .photo-section, .about-section, header {
+    background-color: whitesmoke;
+ }
+
+ .photo-section {
+    text-align: center;
+ }
+
+.photo-section img {
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    margin: 15px 30px;
+  }
+
+  /* **************** Course Section ***************** */
+
+.course-section {
+    text-align: center;
+}
+
+.completed-course-name, .incompleted-course-name {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto 15px;
+}
+
+.completed-course-name {
+    background-color: #D6BFAF;
+}
+
+.incompleted-course-name {
+    background-color: #e1bb90;
+}
+
+.course-btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+}
+
+.course-section button {
+    background-color: var(--dark-grey);
+    color: var(--light-beige);
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.course-section p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: none;
+}
+
+ /* ************* Footer ************** */
+
+ footer {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: var(--light-beige);
+    background-color: var(--dark-grey);
+ }
+
+ footer p {
+    padding: 10px;
+ }
+
+ .social {
+    background-color: white;
+ }
+
+ .social img {
+    width: 44px;
+    height: 44px;
+    padding: 2px;
+    border: 1px solid var(--light-beige);
+    border-radius: 8px;
+ }
+
+ .social img:hover {
+    background-color: var(--light-beige);
+ }

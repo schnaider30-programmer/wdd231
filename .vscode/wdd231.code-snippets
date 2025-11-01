@@ -1,0 +1,87 @@
+{
+	"Html WDD 231 Template": {
+		"scope": "html",
+		"prefix": "html231",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"\t<head>",
+			"\t\t<meta charset=\"UTF-8\">",
+			"\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"\t\t<meta name=\"author\" content=\"${1:Jean Louis Schnaider}\">",
+			"\t\t<meta name=\"description\" content=\"$2\">",
+			"\t\t<title>${3:Document Title}</title>",
+			"\t\t<link rel=\"stylesheet\" href=\"styles/normalize.css\">",
+			"\t\t<link rel=\"stylesheet\" href=\"styles/$4\">",
+			"\t\t<script src=\"scripts/$5\" defer></script>",
+			"\t</head>",
+			"<body>",
+			"\t<header>",
+			"\t\t${6:<img src=\"images/${7:Image Name}\" alt=\"$8\">}",
+			"\t\t<nav>",
+			"\t\t\t<ul>",
+			"\t\t\t\t<li></li>",
+			"\t\t\t\t<li></li>",
+			"\t\t\t\t<li></li>",
+			"\t\t\t</ul>",
+			"\t\t</nav>",
+			"\t</header>",
+			"\t<main>",
+			"\t\t$0",
+			"\t</main>",
+			"\t<footer>",
+			"\t\t<p>&copy; <span id=\"currentYear\"></span> | Schnaider Jean Louis | Haiti</p>",
+			"\t\t<p id=\"lastModified\"></p>",
+			"\t</footer>",
+			"</body>",
+			"</html>"
+		],
+		"description": "This Will Be WDD 231 Base Page Layout"
+	},
+	"navigation": {
+		"scope": "html",
+		"prefix": "nav231",
+		"body": [
+			"<nav>",
+			"\t<ul>",
+			"\t\t(li>a.current)+(li>a)*$1",
+			"\t<ul>",
+			"<nav>"
+		]
+	},
+	"Playfai Display HTML": {
+		"scope": "html",
+		"prefix": "playfair",
+		"body": "<link href=\"https: //fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap\" rel=\"stylesheet\">"
+	},
+	"Playfai Display CSS": {
+		"scope": "css",
+		"prefix": "playfair",
+		"body": "'Playfair Display', serif;"
+	},
+	"Roboto HTML": {
+		"scope": "html",
+		"prefix": "roboto",
+		"body": "<link href=\"https: //fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\" rel=\"stylesheet\">"
+	},
+	"Roboto CSS": {
+		"scope": "css",
+		"prefix": "roboto",
+		"body": "'Roboto', sans-serif;"
+	},
+	"Poppins HTML": {
+		"scope": "html",
+		"prefix": "poppins",
+		"body": "<link href=\"https: //fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap\" rel=\"stylesheet\">"
+	},
+	"Poppins CSS": {
+		"scope": "css",
+		"prefix": "poppins",
+		"body": "'Poppins', sans-serif;"
+	},
+	"Font WDD Project": {
+		"scope": "html",
+		"prefix": "fonts",
+		"body": "<link href=\"https: //fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap\" rel=\"stylesheet\">"
+	}
+}

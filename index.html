@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jean Louis Schnaider">
+    <meta name="description" content="Home page for presenting myself.">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Ñogo" height="">
+        <span>Jean Louis Schnaider</span>
+        <button type="button" id="ham-btn" class="hamburger" aria-label="Hamburger Menu Button"></button>
+    </header>
+    <nav id="nav-links" class="navigation">
+        <ul>
+            <li><a href="#index.html" class="current">Home</a></li>
+            <li><a href="#chamber.html">Chamber Project</a></li>
+            <li><a href="#final.html">Final Project</a></li>
+            <ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about-section">
+            <h2>about me</h2>
+            <p>My name is Jean Louis Schnaider. I'm from Haiti. I'm a software development student at BYU-Idaho, also
+                studying psychology at the State University of Haiti. I have a strong foundation in front-end
+                technologies like HTML, CSS, JavaScript, and Python, and I'm passionate about building tools that solve
+                real problems I'm methodical and curious. I like to understand not just how code works, but why.</p>
+        </section>
+
+        <section class="photo-section">
+            <h2>student photo</h2>
+            <img src="images/student-photo.webp" alt="Student Schnaider Jean Louis Photo">
+        </section>
+
+        <section class="course-section">
+            <h2>web certificate courses</h2>
+            <div class="course-btn">
+                <button type="button" id="all-course" ria-label="All course">ALL</button>
+                <button type="button" id="cse-course" ria-label="All CSE course">CSE</button>
+                <button type="button" id="wdd-course" aria-label="All WDD course">WDD</button>
+            </div>
+
+            <div id="course" class="course-list">
+
+            </div>
+            <p>The total credits for course listed above is <span id="credits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+
+            <a href="https://web.facebook.com/schnaider.jeanlouis.5" target="blank"><img src="images/facebook.svg"
+                    alt="Facebook" height="16" width="16px"></a>
+
+            <a href="https://www.linkedin.com/in/schna%C3%AFder-jean-louis/"><img src="images/linkedin.svg"
+                    alt="LinkedIn" height="16" width="16px"></a>
+
+            <a href="https://github.com/schnaider30-programmer"><img src="images/github.svg" alt="GitHub" height="16"
+                    width="16px"></a>
+
+        </div>
+        <p>&copy; <span id="current-year"></span> | Schnaider Jean Louis | Haiti, Port-au-Prince</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+
+</html>
