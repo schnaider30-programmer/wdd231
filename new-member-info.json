@@ -1,0 +1,33 @@
+{
+    "familyN_name": "Jean Louis",
+    "move_in_date": "30/10/2025",
+    "family_member": 5,
+    "visited_by_bishopric": false,
+    "family_members": [
+        {
+            "name": "Jimy",
+            "gender": "male",
+            "birthDate": "26/08/2013"
+        },
+        {
+            "name": "Venise",
+            "gender": "female",
+            "birthDate": "20/12/1974"
+        },
+        {
+            "name": "Achelorde",
+            "gender": "male",
+            "birthDate": "13/02/2006"
+        },
+        {
+            "name": "Schnaider",
+            "gender": "male",
+            "birthDate": "30/08/2002"
+        },
+        {
+            "name": "Martinez Bedwensen",
+            "gender": "male",
+            "birthDate": "03/07/2003"
+        }
+    ]
+}
