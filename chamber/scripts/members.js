@@ -1,13 +1,15 @@
 const cards = document.querySelector("#cards");
-const url = 'https://github.com/schnaider30-programmer/wdd231/blob/main/chamber/data/members.json';
+const url = 'https://raw.githubusercontent.com/schnaider30-programmer/wdd231/main/chamber/data/members.json';
 
-async function getBusinessData(business) {
+async function getBusinessData() {
     const response = await fetch(url);
-    const data = response.json();
+    const data = await response.json();
 
     displayMembersInfo(data.companies);
-    
-    }
+
+}
+
+getBusinessData();
 
 function displayMembersInfo(members) {
     members.forEach(member => {
@@ -19,12 +21,14 @@ function displayMembersInfo(members) {
 
         card.classList.add("business-card");
 
-        para1.textContent(`${member.adress}`);
-        para2.textContent(`${member.phone}`);
+        para1.textContent= `${member.address}`;
+        para2.textContent = `${member.phone}`;
+
+        link.setAttribute("href", `${member.website}`)
         link.innerHTML = `${member.website}`;
 
-        logo.setAttribute("href", `${member.image}`);
-        logo.setAttribute("alt", `${member.name}`);
+        logo.setAttribute("src", `${member.image}`);
+        logo.setAttribute("alt", `${member.name} Logo`);
         logo.setAttribute("loading", "lazy");
 
         card.appendChild(logo);
@@ -33,7 +37,5 @@ function displayMembersInfo(members) {
         card.appendChild(link);
 
         cards.appendChild(card);
-
-
     })
 }

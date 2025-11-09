@@ -5,7 +5,7 @@
             "address": "12 Rue des Entrepreneurs, Lillavois, Haiti",
             "phone": "+509 3456-7890",
             "website": "https://lillavoistech.ht",
-            "image": "lillavois-tech.png",
+            "image": "https://raw.githubusercontent.com/schnaider30-programmer/wdd231/main/chamber/images/tech_solution.webp",
             "membershipLevel": 3,
             "description": "Fournisseur de services numériques pour les PME locales."
         },
@@ -14,7 +14,7 @@
             "address": "45 Avenue Christophe, Lillavois, Haiti",
             "phone": "+509 2234-5678",
             "website": "https://marchebonprix.ht",
-            "image": "marche-bon-prix.png",
+            "image": "https://raw.githubusercontent.com/schnaider30-programmer/wdd231/main/chamber/images/bon_marche.webp",
             "membershipLevel": 2,
             "description": "Supermarché communautaire offrant des produits locaux à prix abordables."
         },
@@ -32,7 +32,7 @@
             "address": "3 Rue du Marché, Lillavois, Haiti",
             "phone": "+509 3123-4567",
             "website": "https://cafelakay.ht",
-            "image": "cafe-lakay.png",
+            "image": "https://raw.githubusercontent.com/schnaider30-programmer/wdd231/main/chamber/images/cafe-lakay.webp",
             "membershipLevel": 1,
             "description": "Café artisanal mettant en valeur les saveurs locales."
         },
@@ -41,7 +41,7 @@
             "address": "27 Rue de l'Éducation, Lillavois, Haiti",
             "phone": "+509 2987-6543",
             "website": "https://ecolehorizon.ht",
-            "image": "ecole-horizon.png",
+            "image": "ehttps://raw.githubusercontent.com/schnaider30-programmer/wdd231/main/chamber/images/ecole-horizon.webp",
             "membershipLevel": 2,
             "description": "Institution scolaire privée axée sur l'excellence académique et l'innovation."
         },
@@ -50,7 +50,7 @@
             "address": "19 Rue des Artisans, Lillavois, Haiti",
             "phone": "+509 3765-4321",
             "website": "https://batisseursavenir.ht",
-            "image": "batisseurs-avenir.png",
+            "image": "https://raw.githubusercontent.com/schnaider30-programmer/wdd231/main/chamber/images/baptisseurs-avenir.webp",
             "membershipLevel": 1,
             "description": "Entreprise de construction durable et d'aménagement urbain."
         },
@@ -59,7 +59,7 @@
             "address": "10 Rue de la Communication, Lillavois, Haiti",
             "phone": "+509 3012-3456",
             "website": "https://radiolillavois.ht",
-            "image": "radio-lillavois.png",
+            "image": "https://raw.githubusercontent.com/schnaider30-programmer/wdd231/main/chamber/images/radio-lillavois.webp",
             "membershipLevel": 2,
             "description": "Station de radio communautaire promouvant l'information locale et la culture."
         }
