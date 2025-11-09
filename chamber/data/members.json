@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Lillavois Tech Solutions",
+            "address": "12 Rue des Entrepreneurs, Lillavois, Haiti",
+            "phone": "+509 3456-7890",
+            "website": "https://lillavoistech.ht",
+            "image": "lillavois-tech.png",
+            "membershipLevel": 3,
+            "description": "Fournisseur de services numériques pour les PME locales."
+        },
+        {
+            "name": "Marché Bon Prix",
+            "address": "45 Avenue Christophe, Lillavois, Haiti",
+            "phone": "+509 2234-5678",
+            "website": "https://marchebonprix.ht",
+            "image": "marche-bon-prix.png",
+            "membershipLevel": 2,
+            "description": "Supermarché communautaire offrant des produits locaux à prix abordables."
+        },
+        {
+            "name": "Clinique Lumière",
+            "address": "8 Rue de la Santé, Lillavois, Haiti",
+            "phone": "+509 3344-1122",
+            "website": "https://cliniquelumiere.ht",
+            "image": "clinique-lumiere.png",
+            "membershipLevel": 3,
+            "description": "Centre médical moderne spécialisé en soins primaires et urgences."
+        },
+        {
+            "name": "Café Lakay",
+            "address": "3 Rue du Marché, Lillavois, Haiti",
+            "phone": "+509 3123-4567",
+            "website": "https://cafelakay.ht",
+            "image": "cafe-lakay.png",
+            "membershipLevel": 1,
+            "description": "Café artisanal mettant en valeur les saveurs locales."
+        },
+        {
+            "name": "École Horizon",
+            "address": "27 Rue de l'Éducation, Lillavois, Haiti",
+            "phone": "+509 2987-6543",
+            "website": "https://ecolehorizon.ht",
+            "image": "ecole-horizon.png",
+            "membershipLevel": 2,
+            "description": "Institution scolaire privée axée sur l'excellence académique et l'innovation."
+        },
+        {
+            "name": "Bâtisseurs d'Avenir",
+            "address": "19 Rue des Artisans, Lillavois, Haiti",
+            "phone": "+509 3765-4321",
+            "website": "https://batisseursavenir.ht",
+            "image": "batisseurs-avenir.png",
+            "membershipLevel": 1,
+            "description": "Entreprise de construction durable et d'aménagement urbain."
+        },
+        {
+            "name": "Radio Lillavois FM",
+            "address": "10 Rue de la Communication, Lillavois, Haiti",
+            "phone": "+509 3012-3456",
+            "website": "https://radiolillavois.ht",
+            "image": "radio-lillavois.png",
+            "membershipLevel": 2,
+            "description": "Station de radio communautaire promouvant l'information locale et la culture."
+        }
+    ]
+}

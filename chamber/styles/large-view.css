@@ -1,0 +1,37 @@
+@media(min-width: 768px){
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+    header {
+        grid-template-columns: 150px auto auto;
+        
+    }
+
+    .navigation .nav-list {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        align-content: center;
+        border-bottom: initial;
+    }
+
+    .navigation {
+        display: block;
+        position: static;
+        background-color: inherit;
+        border-bottom: initial;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+}
