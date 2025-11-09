@@ -23,7 +23,7 @@
             "address": "8 Rue de la Santé, Lillavois, Haiti",
             "phone": "+509 3344-1122",
             "website": "https://cliniquelumiere.ht",
-            "image": "clinique-lumiere.png",
+            "image": "https://raw.githubusercontent.com/schnaider30-programmer/wdd231/main/chamber/images/clinique-lumiere.webp",
             "membershipLevel": 3,
             "description": "Centre médical moderne spécialisé en soins primaires et urgences."
         },
@@ -41,7 +41,7 @@
             "address": "27 Rue de l'Éducation, Lillavois, Haiti",
             "phone": "+509 2987-6543",
             "website": "https://ecolehorizon.ht",
-            "image": "ehttps://raw.githubusercontent.com/schnaider30-programmer/wdd231/main/chamber/images/ecole-horizon.webp",
+            "image": "https://raw.githubusercontent.com/schnaider30-programmer/wdd231/main/chamber/images/ecole-horizon.webp",
             "membershipLevel": 2,
             "description": "Institution scolaire privée axée sur l'excellence académique et l'innovation."
         },
