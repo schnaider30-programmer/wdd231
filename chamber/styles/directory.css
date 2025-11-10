@@ -5,6 +5,8 @@
     --primary-color: #0F172A;
     --secondary-color: #38BDF8;
     --background-color: #E2E8F0;
+    --body-background: #f5f7fb;
+    --white: #ffffff;
     --text-color: #1F2937;
 }
 
@@ -19,7 +21,7 @@ main {
 }
 
 body {
-    background-color: #f5f7fb;
+    background-color: var(--body-background);
 }
 
 /* ************WayFinding ******************* */
@@ -137,7 +139,7 @@ button {
 h1 {
     padding-left: 10px;
     font-family: var(--heading-font);
-    color: #0F172A;
+    color: var(--primary-color);
 }
 
 /* ***************** Card Section ************* */
@@ -218,7 +220,7 @@ footer {
     gap: 15px;
     justify-content: space-around;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
 }
 
 .social {
