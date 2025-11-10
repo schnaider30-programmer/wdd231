@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Jean Louis Schnaider">
-        <meta name="description" content="Discover business resources, events, and networking opportunities with the Lillavois Chamber of Commerce, your hub for local economic growth.">
-        <meta property="og:description" content="Discover business resources, events, and networking opportunities with the Lillavois Chamber of Commerce, your hub for local economic growth.">
-        <meta property="og:title" content="Lillavois Chamber of Commerce">
-        <meta property="og:image" content="C:\Users\jelon\OneDrive\Desktop\Learning Programming\wdd231\chamber\images\first-logo.svg">
-        <meta property="og:url" content="">
-        <title>Lillavois Chamber of Commerce</title>
-        <link rel="icon" href="images/usable-logo.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/normalize.css">
-        <link rel="stylesheet" href="styles/small-view.css">
-        <link rel="stylesheet" href="styles/large-view.css">
-        <script src="scripts/navigation.js" defer></script>
-        <script src="../scripts/date.js" defer></script>
-        <script src="./scripts/members.js" defer></script>
-        <script src="./scripts/view-mode.js" defer></script>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jean Louis Schnaider">
+    <meta name="description"
+        content="Discover business resources, events, and networking opportunities with the Lillavois Chamber of Commerce, your hub for local economic growth.">
+    <meta property="og:description"
+        content="Discover business resources, events, and networking opportunities with the Lillavois Chamber of Commerce, your hub for local economic growth.">
+    <meta property="og:title" content="Lillavois Chamber of Commerce">
+    <meta property="og:image"
+        content="C:\Users\jelon\OneDrive\Desktop\Learning Programming\wdd231\chamber\images\first-logo.svg">
+    <meta property="og:url" content="">
+    <title>Lillavois Chamber of Commerce</title>
+    <link rel="icon" href="images/usable-logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="../scripts/date.js" defer></script>
+    <script src="./scripts/members.js" defer></script>
+    <script src="./scripts/view-mode.js" defer></script>
+</head>
+
 <body>
     <header>
-        <img src="images/usable-logo.jpg" alt="Website Logo">
+        <div class="logo">
+            <img src="images/usable-logo.jpg" alt="Website Logo">
+        </div>
+
         <span>Lillavois Chamber Of Commerce</span>
         <nav id="nav-bar" class="navigation">
             <ul class="nav-list">
                 <li><a href="#index.html">Home</a></li>
-                <li><a href="#directory.html" aria-readonly="true" class="active">Directory</a></li>
+                <li><a href="#directory.html" class="active">Directory</a></li>
                 <li><a href="#join.html">Join</a></li>
                 <li><a href="#discover.html">Discover</a></li>
-            </ul> 
+            </ul>
         </nav>
-        <button id="ham-button" class="menu-btn"></button>
+        <button id="ham-button" class="menu-btn" aria-label="Menu Button"></button>
     </header>
 
     <main>
         <div class="view-mode-btn">
 
-            <button id="grid-btn" class="grid"><img src="images/grid-on.svg" alt="Grid View Mode"></button>
+            <button id="grid-btn" class="grid"><img src="images/grid-on.svg" alt="Grid View Mode"
+                    aria-label="Toggle Grid View Mode"></button>
 
-            <button id="list-btn" class="list"><img src="images/list-on.svg" alt="List View Mode"></button>
+            <button id="list-btn" class="list"><img src="images/list-on.svg" alt="List View Mode"
+                    aria-label="Toggle List View Mode"></button>
 
         </div>
 
@@ -59,16 +71,16 @@
             <p>(+509)12345678</p>
         </div>
         <div class="social">
-        
+
             <a href="https://web.facebook.com/schnaider.jeanlouis.5" target="blank"><img src="../images/facebook.svg"
                     alt="Facebook Logo Icon" height="48" width="48"></a>
-        
+
             <a href="https://www.linkedin.com/in/schna%C3%AFder-jean-louis/"><img src="../images/linkedin.svg"
                     alt="LinkedIn Logo Icon" height="48" width="48"></a>
-        
-            <a href="https://github.com/schnaider30-programmer"><img src="../images/github.svg" alt="GitHub Logo Icon" height="48"
-                    width="48"></a>
-        
+
+            <a href="https://github.com/schnaider30-programmer"><img src="../images/github.svg" alt="GitHub Logo Icon"
+                    height="48" width="48"></a>
+
         </div>
         <div class="student-info">
             <p>WDD231 Class Project</p>
@@ -78,4 +90,5 @@
         </div>
     </footer>
 </body>
+
 </html>

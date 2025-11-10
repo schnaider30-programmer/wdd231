@@ -1,11 +1,12 @@
-@media(min-width: 768px){
+@media(min-width: 768px) {
     body {
         max-width: 1200px;
         margin: auto;
     }
+
     header {
         grid-template-columns: 150px auto auto;
-        
+
     }
 
     .navigation .nav-list {
@@ -27,16 +28,24 @@
     .menu-btn {
         display: none;
     }
-    
-    .grid-view{
+
+    .grid-view {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 320px));
+        grid-template-columns: repeat(auto-fit, minmax(90px, 320px));
+    }
+
+    .list-view section {
+        grid-template-columns: 1fr 2fr 1fr 2fr;
     }
 
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+}
 
-    
+@media (max-width: 340px) {
+    header span {
+        font-size: 0.9rem;
+    }
 }

@@ -1,15 +1,15 @@
 const gridView = document.querySelector("#grid-btn");
 const listView = document.querySelector("#list-btn");
 
-const cards = document.querySelector("#cards");
+const grid = document.querySelector("#cards");
 
 gridView.addEventListener("click", () => {
-    cards.classList.add("grid-view");
-    cards.classList.remove("list-view");
+    grid.classList.add("grid-view");
+    grid.classList.remove("list-view");
 })
 
 listView.addEventListener("click", () => {
-    cards.classList.add("list-view");
-    cards.classList.remove("grid-view");
+    grid.classList.add("list-view");
+    grid.classList.remove("grid-view");
 })
 
