@@ -1,0 +1,94 @@
+:root {
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Poppins', sans-serif;
+    --special-font: 'Ubuntu';
+    --primary-color: #0F172A;
+    --secondary-color: #38BDF8;
+    --background-color: #E2E8F0;
+    --body-background: #f5f7fb;
+    --white: #ffffff;
+    --text-color: #1F2937;
+}
+
+/* **************** Hero Section ********************* */
+.hero-section {
+    position: relative;
+    width: 100%;
+}
+
+.hero-section img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-section a {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: var(--body-background);
+    color: var(--text-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.hero-section a:hover {
+    background-color: var(--background-color);
+}
+
+.hero-section a span {
+    margin-left: 5px;
+    transition: margin 0.5s ease;
+}
+
+.hero-section a:hover span{
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+/* ************* Weather Section ******************* */
+.forecast-section, .weather-section, .spotlight-section, .event-section {
+    background-color: var(--background-color);
+    border: 1px solid rgb(27, 87, 127);
+    text-transform: capitalize;
+    flex: 0 0 80px;
+}
+
+section h2 {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: var(--heading-font);
+    padding: 10px;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.4);
+}
+.current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.weather-container {
+    padding: 20px;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+}
+
+.forecast-weather {
+    margin: 20px 10px;
+}
+
+.forecast-weather p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-family: var(--body-font);
+}

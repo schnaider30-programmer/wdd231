@@ -41,10 +41,35 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+
+    .event-section {
+        flex: 1 1 350px;
+    }
+    
+    .forecast-section, .weather-section {
+        flex: 0 1 300px;
+    }
+
+    .hero-section a {
+        top: 80%;
+        left: 80%;
+    }
 }
 
 @media (max-width: 340px) {
     header span {
+        font-size: 0.9rem;
+    }
+    .hero-section a {
+        top: 66%;
+        left: 50%;
         font-size: 0.9rem;
     }
 }

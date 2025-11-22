@@ -7,7 +7,8 @@
             "website": "https://lillavoistech.ht",
             "image": "images/tech_solution.webp",
             "membershipLevel": 3,
-            "description": "Fournisseur de services numériques pour les PME locales."
+            "description": "Fournisseur de services numériques pour les PME locales.",
+            "tagline": "Digital solutions powering local businesses"
         },
         {
             "name": "Marché Bon Prix",
@@ -16,7 +17,8 @@
             "website": "https://marchebonprix.ht",
             "image": "images/bon_marche.webp",
             "membershipLevel": 2,
-            "description": "Supermarché communautaire offrant des produits locaux à prix abordables."
+            "description": "Supermarché communautaire offrant des produits locaux à prix abordables.",
+            "tagline": "Local products, fair prices"
         },
         {
             "name": "Clinique Lumière",
@@ -25,7 +27,8 @@
             "website": "https://cliniquelumiere.ht",
             "image": "images/clinique-lumiere.webp",
             "membershipLevel": 3,
-            "description": "Centre médical moderne spécialisé en soins primaires et urgences."
+            "description": "Centre médical moderne spécialisé en soins primaires et urgences.",
+            "tagline": "Modern care, brighter health"
         },
         {
             "name": "Café Lakay",
@@ -34,7 +37,8 @@
             "website": "https://cafelakay.ht",
             "image": "images/cafe-lakay.webp",
             "membershipLevel": 1,
-            "description": "Café artisanal mettant en valeur les saveurs locales."
+            "description": "Café artisanal mettant en valeur les saveurs locales.",
+            "tagline": "Authentic taste, crafted locally"
         },
         {
             "name": "École Horizon",
@@ -43,7 +47,8 @@
             "website": "https://ecolehorizon.ht",
             "image": "images/ecole-horizon.webp",
             "membershipLevel": 2,
-            "description": "Institution scolaire privée axée sur l'excellence académique et l'innovation."
+            "description": "Institution scolaire privée axée sur l'excellence académique et l'innovation.",
+            "tagline": "Educating today, inspiring tomorrow"
         },
         {
             "name": "Bâtisseurs d'Avenir",
@@ -52,7 +57,8 @@
             "website": "https://batisseursavenir.ht",
             "image": "images/baptisseurs-avenir.webp",
             "membershipLevel": 1,
-            "description": "Entreprise de construction durable et d'aménagement urbain."
+            "description": "Entreprise de construction durable et d'aménagement urbain.",
+            "tagline": "Building sustainably, shaping the future"
         },
         {
             "name": "Radio Lillavois FM",
@@ -61,7 +67,8 @@
             "website": "https://radiolillavois.ht",
             "image": "images/radio-lillavois.webp",
             "membershipLevel": 2,
-            "description": "Station de radio communautaire promouvant l'information locale et la culture."
+            "description": "Station de radio communautaire promouvant l'information locale et la culture.", 
+            "tagline": "The voice of your community"
         }
     ]
 }

@@ -226,15 +226,16 @@ footer {
 .social {
     display: flex;
     gap: 15px;
+    cursor: pointer;
 }
 
 .social img {
     border-radius: 10px;
     padding: 5px;
-    outline: 1px solid var(--background-color);
+    background-color: var(--white);
+    /* outline: 1px solid var(--background-color); */
 }
 
 .social img:hover {
     background-color: var(--background-color);
-
 }
