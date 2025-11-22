@@ -26,7 +26,7 @@
             "phone": "+509 3344-1122",
             "website": "https://cliniquelumiere.ht",
             "image": "images/clinique-lumiere.webp",
-            "membershipLevel": 3,
+            "membershipLevel": 1,
             "description": "Centre médical moderne spécialisé en soins primaires et urgences.",
             "tagline": "Modern care, brighter health"
         },
@@ -56,7 +56,7 @@
             "phone": "+509 3765-4321",
             "website": "https://batisseursavenir.ht",
             "image": "images/baptisseurs-avenir.webp",
-            "membershipLevel": 1,
+            "membershipLevel":3,
             "description": "Entreprise de construction durable et d'aménagement urbain.",
             "tagline": "Building sustainably, shaping the future"
         },

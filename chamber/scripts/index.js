@@ -5,20 +5,28 @@ const iconContainer = document.querySelector(".icon-container");
 
 const weatherContainer = document.querySelector(".weather-container");
 
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=18.68654229051863&lon=-72.25689543267296&appid=153b212f46050da1a4554b7f6497437a&units=metric";
+const spotlightSection = document.querySelector(".spotlight-section");
+
+const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=18.68654229051863&lon=-72.25689543267296&appid=153b212f46050da1a4554b7f6497437a&units=metric";
 
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=18.68654229051863&lon=-72.25689543267296&appid=153b212f46050da1a4554b7f6497437a&units=metric";
 
+// const membersUrl = 'https://raw.githubusercontent.com/schnaider30-programmer/wdd231/main/chamber/data/members.json';
+
+const membersUrl =  'data/members.json'
+
 async function apiFetch() {
-    const response = await fetch(url);
+    const response = await fetch(weatherUrl);
     const forecast = await fetch(forecastUrl);
+    const members = await fetch(membersUrl);
 
     const data = await response.json();
     const forecastData = await forecast.json();
-    // console.log(data);
-    console.log(forecastData);
+    const membersData = await members.json()
+    console.log(membersData);
     displayCurrentWeather(data);
     displayForecastWeather(forecastData);
+    displayPremiumMember(membersData.companies);
 }
 
 apiFetch();
@@ -35,6 +43,9 @@ function displayCurrentWeather(data) {
     const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     icon.setAttribute("src", iconSrc);
     icon.setAttribute("alt", data.weather[0].description);
+    icon.setAttribute("srcset", "https://openweathermap.org/img/wn/02d.png 1x, https://openweathermap.org/img/wn/02d@2x.png 2x");
+    icon.setAttribute("width", "100");
+    icon.setAttribute("height", "100");
     icon.setAttribute("loading", "lazy");
     icon.className = "icon";
 
@@ -99,4 +110,55 @@ function formatDate(unixCode) {
 
     const formattedDate = date.toLocaleDateString("en-Us", option)
     return formattedDate
+}
+
+function shuttle(array) {
+    for (let index = array.length - 1; index > 0; index--) {
+        //Choose a randomly index between 0 et 1
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [array[index], array[randomIndex]] = [array[randomIndex], array[index]]
+    }
+    return array;
+}
+
+function displayPremiumMember(members) {
+    const premiumMembers = members.filter(m => m.membershipLevel === 2 || m.membershipLevel === 3);
+    const shuttledArray = shuttle(premiumMembers);
+    const memberChoosen = shuttledArray.slice(0, 3);
+    const spotlightSection = document.querySelector(".spotlight-section");
+    memberChoosen.forEach((member) => {
+        const card = document.createElement("div");
+        card.className = "card";
+        const cardHeader = document.createElement("div");
+        cardHeader.className = "card-header";
+        const logoContainer = document.createElement("div");
+        logoContainer.className = "logo-container";
+        const logo = document.createElement("img");
+        const memberInfo = document.createElement("div");
+        memberInfo.className = "member-info";
+
+        cardHeader.innerHTML = `
+        <h3>${member.name}</h3>
+        <p>${member.tagline}</p>`;
+
+        logo.setAttribute("src", member.image);
+        logo.setAttribute("alt", `Logo of ${member.name} Company`);
+        logo.setAttribute("loading", "lazy");
+
+        logoContainer.appendChild(logo);
+
+
+        //+= add content instead of replacing it
+        memberInfo.innerHTML += `<p><span>Address:</span> ${member.address}</p>`;
+        memberInfo.innerHTML += `<p><span>Phone:</span> ${member.phone}</p>`;
+        memberInfo.innerHTML += `<p><a href="${member.website}">${member.website}</p>`;
+        memberInfo.innerHTML += `<p><span>Membership:</span> ${member.membershipLevel == 3 ? "Gold 🥇" : member.membershipLevel == 2 ? "Silver 🥈" : member.membershipLevel == 1 ? "bronze 🥉" : "Standard ⭐"}</p>`;
+
+        card.appendChild(cardHeader);
+        card.appendChild(logo);
+        card.appendChild(memberInfo);
+        spotlightSection.appendChild(card);
+
+    })
+        
 }

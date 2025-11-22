@@ -46,20 +46,36 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /* flex-direction: column; */
+        align-items: initial;
+        margin: auto;
+        width: 100%;
     }
 
     .event-section {
-        flex: 1 1 350px;
+        flex: 1 0 350px;
+        min-width: 500px;
+        
     }
     
     .forecast-section, .weather-section {
-        flex: 0 1 300px;
+        flex: 1 0 300px;
     }
 
     .hero-section a {
         top: 80%;
         left: 80%;
+    }
+
+    .spotlight-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* border: 1px solid; */
+        /* margin: 0; */
+    }
+
+    .spotlight-section .card {
+        flex: 0 0 350px;
     }
 }
 

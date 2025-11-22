@@ -14,18 +14,18 @@ getBusinessData();
 function displayMembersInfo(members) {
     members.forEach(member => {
         let card = document.createElement("section");
-        let para0 = document.createElement("p");
-        let para1 = document.createElement("p");
-        let para2 = document.createElement("p");
+        let name = document.createElement("p");
+        let address = document.createElement("p");
+        let phone = document.createElement("p");
         let link = document.createElement("a");
         let logo = document.createElement("img");
 
         card.classList.add("business-card");
 
-        para0.textContent = `${member.name}`;
-        para0.className = "company-name";
-        para1.textContent = `${member.address}`;
-        para2.textContent = `${member.phone}`;
+        name.textContent = `${member.name}`;
+        name.className = "company-name";
+        address.textContent = `${member.address}`;
+        phone.textContent = `${member.phone}`;
 
         link.setAttribute("href", `${member.website}`)
         link.innerHTML = `${member.website}`;
@@ -33,10 +33,10 @@ function displayMembersInfo(members) {
         logo.setAttribute("src", `${member.image}`);
         logo.setAttribute("alt", `${member.name} Logo`);
         logo.setAttribute("loading", "lazy");
-        card.appendChild(para0);
+        card.appendChild(name);
         card.appendChild(logo);
-        card.appendChild(para1);
-        card.appendChild(para2);
+        card.appendChild(address);
+        card.appendChild(phone);
         card.appendChild(link);
 
         cards.appendChild(card);
