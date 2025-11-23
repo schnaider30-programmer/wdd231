@@ -64,6 +64,7 @@
     .hero-section a {
         top: 80%;
         left: 80%;
+        font-size: 1rem;
     }
 
     .spotlight-section {
@@ -79,6 +80,14 @@
     }
 }
 
+@media (max-width: 485px) {
+    .hero-section a {
+        top: 70%;
+        left: 55%;
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 340px) {
     header span {
         font-size: 0.9rem;
@@ -89,3 +98,4 @@
         font-size: 0.9rem;
     }
 }
+
