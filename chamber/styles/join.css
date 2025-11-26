@@ -142,6 +142,7 @@
     border-radius: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
+    color: var(--primary-color);
     
 }
 
@@ -157,7 +158,7 @@
 #dialogBox .dialog-header{
     display: grid;
     grid-template-columns: auto 48px;
-    align-items: space-between;
+    justify-content: space-between;
     padding:  10px;
     font-family: var(--heading-font);
     background-color: var(--primary-color);
