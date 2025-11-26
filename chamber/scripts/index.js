@@ -152,7 +152,7 @@ function displayPremiumMember(members) {
         memberInfo.innerHTML += `<p><span>Address:</span> ${member.address}</p>`;
         memberInfo.innerHTML += `<p><span>Phone:</span> ${member.phone}</p>`;
         memberInfo.innerHTML += `<p><a href="${member.website}">${member.website}</p>`;
-        memberInfo.innerHTML += `<p><span>Membership:</span> ${member.membershipLevel == 3 ? "Gold 🥇" : member.membershipLevel == 2 ? "Silver 🥈" : member.membershipLevel == 1 ? "bronze 🥉" : "Standard ⭐"}</p>`;
+        memberInfo.innerHTML += `<p><span>Membership:</span> ${member.membershipLevel == 3 ? "Gold 🥇" : member.membershipLevel == 2 ? "Silver 🥈" : member.membershipLevel == 1 ? "bronze 🥉" : "Non-Profit ⭐"}</p>`;
 
         card.appendChild(cardHeader);
         card.appendChild(logo);

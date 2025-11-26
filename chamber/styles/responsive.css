@@ -78,6 +78,25 @@
     .spotlight-section .card {
         flex: 0 0 350px;
     }
+
+    /* *********Join********* */
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+    .main-container .form-container {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .main-container .membership-level {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 }
 
 @media (max-width: 485px) {

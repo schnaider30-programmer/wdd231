@@ -1,0 +1,50 @@
+main {
+    /* width: 90%; */
+    margin: 10px auto;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+}
+
+.welcome-message {
+    text-align: center;
+    border-bottom: 1px solid rgba(31, 33, 34, 0.33);
+    padding: 10px;
+}
+
+.welcome-message p {
+    font-family: var(--special-font);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.member-info {
+    width: fit-content;
+    margin: 2rem auto;
+    box-shadow: 0 0 5px 2px var(--primary-color);
+    padding: 1.5rem;
+    background-color: var(--background-color);
+}
+
+.member-info h3 {
+    font-family: var(--heading-font);
+    box-shadow: inset 2px 2px 5px 0 var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.member-info p {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: var(--special-font);
+    color: var(--primary-color);
+    font-family: 1.2rem;
+}
+
+.member-info p span {
+    font-weight: 700;
+}
