@@ -8,6 +8,7 @@
     --body-background: #f5f7fb;
     --white: #ffffff;
     --text-color: #1F2937;
+    --btn-bg: #054474;
 }
 
 * {
@@ -115,6 +116,23 @@ button {
     padding: 0.2rem;
 }
 
+.cta-button {
+    padding: 5px 10px;
+    text-align: center;
+    margin: auto 10px;
+    width: fit-content;
+    min-width: fit-content;
+    background-color: var(--primary-color);
+    font-family: var(--body-font);
+    font-size: 1rem;
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+}
+
+.cta-button:hover {
+    background-color: var(--btn-bg);
+    color: var(--secondary-color);
+}
 /* *********Menu Button ************ */
 
 .menu-btn {

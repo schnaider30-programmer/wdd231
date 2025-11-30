@@ -1,0 +1,127 @@
+#message {
+    padding: 10px;
+    font-family: var(--special-font);
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.places-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.places-card div {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "name name"
+        "photo description"
+        "photo description"
+        "address button";
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+
+.places-card div h2 {
+    grid-area: name;
+    font-family: var(--heading-font);
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--text-color);
+    color: var(--primary-color)
+}
+
+.places-card div picture {
+    display: block;
+    overflow: hidden;
+}
+
+.places-card div img {
+    grid-area: photo;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease-in-out;
+}
+
+.places-card div address {
+    grid-area: address;
+    font-family: var(--special-font);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.places-card div p {
+    grid-area: description;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+
+.cta-button {
+    grid-area: button;
+    font-family: var(--body-font);
+    /* text-align: center; */
+}
+
+@media screen and (min-width:320px) and (max-width: 640px) {
+    .places-card div {
+        grid-template-areas:
+            "name"
+            "photo"
+            "description"
+            "address"
+            "button";
+        
+    }
+
+    .cta-button {
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width:641px) and (max-width: 1024px) {
+    .places-card {
+        grid-template-columns: 1fr; 
+    }
+    .places-card div {
+        grid-template-areas:
+            "name name"
+            "photo description"
+            "address ."
+            ". button";
+    }
+    .cta-button {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .places-card {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .places-card div {
+        grid-template-areas:
+            "name name"
+            "photo description"
+            "photo description"
+            "address button";
+    }
+
+    .places-card div img:hover {
+        transform: scale(1.2);
+    }
+    .cta-button {
+        width: 100%;
+        margin: auto;
+    }
+}
