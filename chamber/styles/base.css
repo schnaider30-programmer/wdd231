@@ -127,6 +127,7 @@ button {
     font-size: 1rem;
     border: 1px solid var(--primary-color);
     color: var(--white);
+    grid-area: button;
 }
 
 .cta-button:hover {
