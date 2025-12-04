@@ -1,0 +1,65 @@
+:root {
+    /* Couleurs principales */
+    --color-black: rgba(0, 0, 0, 1);
+    /* Fond principal */
+    --color-charcoal: rgba(34, 34, 34, 1);
+    /* Fond secondaire */
+    --color-silver: rgba(192, 192, 192, 1);
+    /* Titres, accents */
+    --color-light-silver: rgba(220, 220, 220, 1);
+    /* Texte principal */
+    --color-blue: #1E3A8A;
+    
+
+    /* Couleurs de texte et liens */
+    --text-color: var(--color-light-silver);
+    --heading-color: var(--color-silver);
+    --link-color: var(--color-silver);
+    --link-hover: var(--color-blue);
+
+    /* Fond */
+    --background-main: var(--color-black);
+    --background-alt: var(--color-charcoal);
+}
+
+header img {
+    background-color: rgba(10, 15, 30, 1);
+    border-radius: 40px 40px;
+    width: 150px;
+    height: auto;
+}
+img {
+    background-color: rgba(10, 15, 30, 1);
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+body {
+    background-color: var(--color-silver);
+    color: var(--background-main);
+    font-family: 'Poppin', sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: var(--color-blue);
+    color: var(--heading-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+
+h2 {
+    color: var(--background-alt);
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
