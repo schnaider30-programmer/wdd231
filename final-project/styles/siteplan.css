@@ -4,17 +4,17 @@
     /* Fond principal */
     --color-charcoal: rgba(34, 34, 34, 1);
     /* Fond secondaire */
-    --color-silver: rgba(192, 192, 192, 1);
+    --color-white: #FFFFFF;
     /* Titres, accents */
-    --color-light-silver: rgba(220, 220, 220, 1);
+    --color-light-white: rgba(220, 220, 220, 1);
     /* Texte principal */
     --color-blue: #1E3A8A;
     
 
     /* Couleurs de texte et liens */
-    --text-color: var(--color-light-silver);
-    --heading-color: var(--color-silver);
-    --link-color: var(--color-silver);
+    --text-color: var(--color-light-white);
+    --heading-color: var(--color-white);
+    --link-color: var(--color-white);
     --link-hover: var(--color-blue);
 
     /* Fond */
@@ -36,7 +36,7 @@ img {
 }
 
 body {
-    background-color: var(--color-silver);
+    background-color: var(--color-white);
     color: var(--background-main);
     font-family: 'Poppin', sans-serif;
     text-align: center;
