@@ -9,6 +9,13 @@ hamMenu.addEventListener('click', () => {
     navMenu.classList.toggle("open");
 })
 
+let currentYear = document.querySelector("#current-year");
+let year = new Date().getFullYear();
+currentYear.textContent = `${year}`;
+
+let modified = document.lastModified;
+document.querySelector("#last-modified").innerHTML = `Last Modification: ${modified}`;
+
 // Infos participant
 const firstName = params.get('firstName');
 const lastName = params.get('lastName');
