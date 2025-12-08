@@ -1,6 +1,6 @@
 /* *************** Responsive ************** */
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
 
     header {
         grid-template-columns: 80px auto 44px;
@@ -11,6 +11,8 @@
     .container.edit {
         display: flex;
         flex-direction: column;
+        max-width: 400px;
+        margin: auto;
     }
 
     .ressource-card {
