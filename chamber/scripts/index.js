@@ -115,7 +115,7 @@ function formatDate(unixCode) {
 function shuttle(array) {
     for (let index = array.length - 1; index > 0; index--) {
         //Choose a randomly index between 0 et 1
-        const randomIndex = Math.floor(Math.random() * (index + 1));
+        let randomIndex = Math.floor(Math.random() * (index + 1));
         [array[index], array[randomIndex]] = [array[randomIndex], array[index]]
     }
     return array;

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jean Louis Schnaider">
+
+    <meta name="description" content="Fill in your information and test your knowledge.">
+
+    <meta property="og:description" content="Fill in your information and test your knowledge.">
+
+    <meta property="og:image" content="images/logo-site.webp">
+
+    <meta property="og:title" content="Virtual Academics - Quizz">
+
+    <meta property="og:url" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <title>Virtual Academics - Quizz</title>
+   
+    <link rel="icon" href="images/logo-site.ico">
+
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/quizz.css">
+
+    <script src="scripts/quizz.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo-site.webp" width="80px" alt="Website Logo" loading="lazy">
+        </div>
+
+        <span>Virtual Academics</span>
+        <nav id="nav-bar" class="navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+                <li><a href="quizz.html" class="active">Quizz</a></li>
+            </ul>
+        </nav>
+        <button id="ham-button" class="menu-btn" aria-label="Menu Button"></button>
+    </header>
+    <main>
+
+        <h1>Interactive Quiz</h1>
+        <p>Fill in your information and test your knowledge.</p>
+
+        <!-- Learn more link triggers dialog -->
+        <button id="learnMoreLink">Learn more about this quiz</button>
+
+        <form action="results.html" method="get" id="quizForm">
+            <fieldset>
+                <legend>Participant Information</legend>
+        
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+        
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </fieldset>
+        
+            <!-- Example quiz question -->
+            <fieldset>
+                <legend>1) What does CPU stand for?</legend>
+                <label><input type="radio" name="q1" value="a" required> Central Processing Unit</label><br>
+                <label><input type="radio" name="q1" value="b"> Computer Personal Unit</label><br>
+                <label><input type="radio" name="q1" value="c"> Central Program Utility</label>
+            </fieldset>
+
+             <fieldset>
+                <legend>2) Which data structure uses FIFO?</legend>
+                <label><input type="radio" name="q2" value="a" required /> Stack</label><br>
+                <label><input type="radio" name="q2" value="b" /> Queue</label><br>
+                <label><input type="radio" name="q2" value="c" /> Tree</label>
+            </fieldset>
+        
+                <!-- Q3 -->
+            <fieldset>
+                <legend>3) What does HTML stand for?</legend>
+                <label><input type="radio" name="q3" value="a" required /> HyperText Markup Language</label><br>
+                <label><input type="radio" name="q3" value="b" /> HighText Machine Language</label><br>
+                <label><input type="radio" name="q3" value="c" /> Hyperlink Text Management Language</label>
+            </fieldset>
+        
+                <!-- Q4 -->
+            <fieldset>
+                <legend>4) Which operator is used for equality in JavaScript?</legend>
+                <label><input type="radio" name="q4" value="a" required /> ==</label><br>
+                <label><input type="radio" name="q4" value="b" /> =</label><br>
+                <label><input type="radio" name="q4" value="c" /> ===</label>
+            </fieldset>
+        
+                <!-- Q5 -->
+            <fieldset>
+                <legend>5) Which SQL command is used to retrieve data?</legend>
+                <label><input type="radio" name="q5" value="a" required /> SELECT</label><br>
+                <label><input type="radio" name="q5" value="b" /> INSERT</label><br>
+                <label><input type="radio" name="q5" value="c" /> UPDATE</label>
+            </fieldset>
+        
+                <!-- Q6 -->
+            <fieldset>
+                <legend>6) In binary, what is 1010 equal to in decimal?</legend>
+                <label><input type="radio" name="q6" value="a" required /> 8</label><br>
+                <label><input type="radio" name="q6" value="b" /> 10</label><br>
+                <label><input type="radio" name="q6" value="c" /> 12</label>
+            </fieldset>
+        
+                <!-- Q7 -->
+            <fieldset>
+                <legend>7) Which protocol is used for secure web communication?</legend>
+                <label><input type="radio" name="q7" value="a" required /> HTTP</label><br>
+                <label><input type="radio" name="q7" value="b" /> HTTPS</label><br>
+                <label><input type="radio" name="q7" value="c" /> FTP</label>
+            </fieldset>
+        
+                <!-- Q8 -->
+            <fieldset>
+                <legend>8) Which of these is a programming language?</legend>
+                <label><input type="radio" name="q8" value="a" required /> HTML</label><br>
+                <label><input type="radio" name="q8" value="b" /> CSS</label><br>
+                <label><input type="radio" name="q8" value="c" /> Python</label>
+            </fieldset>
+        
+                <!-- Q9 -->
+            <fieldset>
+                <legend>9) What does RAM stand for?</legend>
+                <label><input type="radio" name="q9" value="a" required /> Random Access Memory</label><br>
+                <label><input type="radio" name="q9" value="b" /> Read Access Module</label><br>
+                <label><input type="radio" name="q9" value="c" /> Rapid Action Memory</label>
+            </fieldset>
+        
+                <!-- Q10 -->
+            <fieldset>
+                <legend>10) Which symbol is used for comments in SQL?</legend>
+                <label><input type="radio" name="q10" value="a" required /> --</label><br>
+                <label><input type="radio" name="q10" value="b" /> //</label><br>
+                <label><input type="radio" name="q10" value="c" /> #</label>
+            </fieldset>
+
+            <button type="submit" class="btn">Submit Quiz</button>
+
+        </form>
+    
+       
+        
+        
+        <!-- Dialog element for explanations -->
+        <dialog id="infoDialog">
+            <div class="header">
+            <h2>Quiz Explanations</h2>
+            <button title="Close" id="close-button">&times;</button>
+            </div>
+
+            <div class="content">
+
+            </div>
+
+
+        </dialog>
+
+
+    </main>
+
+    <footer>
+        <div class="information">
+            <p>Virtual Academics</p>
+            <p>#38 Lillavois, Bon repos</p>
+            <p>Port-au-Prince, Haiti</p>
+            <p>virtualacademics@yahoo.com</p>
+            <p>(+509)12345678</p>
+        </div>
+        <div class="social">
+
+            <a href="https://web.facebook.com/schnaider.jeanlouis.5" target="blank"><img src="../images/facebook.svg"
+                    alt="Facebook Logo Icon" height="48" width="48"></a>
+
+            <a href="https://www.linkedin.com/in/schna%C3%AFder-jean-louis/" target="blank"><img
+                    src="../images/linkedin.svg" alt="LinkedIn Logo Icon" height="48" width="48"></a>
+
+            <a href="https://github.com/schnaider30-programmer" target="blank"><img src="../images/github.svg"
+                    alt="GitHub Logo Icon" height="48" width="48"></a>
+
+        </div>
+        <div class="student-info">
+            <p>WDD231 Final Project</p>
+            <p>Schnaider Jean Louis | Haiti</p>
+            <p>&copy; <span id="current-year"></span></p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

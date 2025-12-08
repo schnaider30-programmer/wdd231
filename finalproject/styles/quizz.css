@@ -1,0 +1,200 @@
+/* ************* Quiz Heading & Intro ************* */
+main h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--color-blue);
+    margin: 20px 0 10px;
+}
+
+
+
+main p {
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--color-charcoal);
+}
+
+/* ************* Quiz Form ************* */
+#quizForm {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    font-family: var(--body-font);
+}
+
+/* Fieldset styling */
+#quizForm fieldset {
+    border: 1px solid var(--color-light-white);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background-color: var(--ligh-gray);
+}
+
+/* Legend styling */
+#quizForm legend {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    padding: 0 8px;
+    margin-bottom: 10px;
+}
+
+/* Labels and inputs */
+#quizForm label {
+    display: block;
+    margin: 8px 0;
+    font-size: 1rem;
+    color: var(--color-charcoal);
+    cursor: pointer;
+}
+
+#quizForm input[type="text"],
+#quizForm input[type="email"],
+#quizForm input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--color-light-white);
+    border-radius: 8px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+#quizForm input[type="text"]:focus,
+#quizForm input[type="email"]:focus,
+#quizForm input[type="tel"]:focus {
+    outline: none;
+    border-color: var(--color-blue);
+    box-shadow: 0 0 5px var(--color-blue);
+}
+
+/* Radio buttons */
+#quizForm input[type="radio"] {
+    margin-right: 8px;
+    accent-color: var(--color-blue);
+    /* modern browsers */
+}
+
+/* Submit button */
+#quizForm .btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: var(--body-font);
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#quizForm .btn:hover {
+    transform: scale(1.05);
+    background-color: var(--color-button);
+}
+
+/* ************* Learn More Button ************* */
+#learnMoreLink {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-family: var(--body-font);
+    background-color: var(--color-button);
+    /* ton vert principal */
+    color: var(--color-black);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#learnMoreLink:hover {
+    background-color: var(--color-blue);
+    /* passe au bleu au survol */
+    transform: scale(1.05);
+}
+
+
+/* ************* Dialog ************* */
+#infoDialog {
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    width: 500px;
+    max-width: 90%;
+    background-color: var(--color-white);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    font-family: var(--body-font);
+    animation: fadeIn 0.3s ease-out;
+    margin: auto;
+}
+
+/* Animation d’apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Header du dialog */
+#infoDialog .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 12px 16px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#infoDialog .header h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--color-white)
+}
+
+#infoDialog .header button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color-light-white);
+    cursor: pointer;
+    transition: color 0.2s ease;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#infoDialog .header button:hover {
+    color: var(--color-button);
+}
+
+/* Corps du dialog */
+#infoDialog p {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-charcoal);
+    font-family: var(--body-font);
+}
+
+/* Style backdrop (fond derrière le dialog) */
+::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
