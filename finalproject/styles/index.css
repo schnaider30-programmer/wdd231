@@ -174,7 +174,7 @@ header span {
     background-color: var(--color-light-white);
     border: 1px solid var(--color-blue);
     padding: 15px;
-    width: 350px;
+    max-width: 350px;
 }
 
 .card h3 {
@@ -333,7 +333,7 @@ h2 {
 /* ************** Footer *************** */
 
 footer {
-    padding: 10px;
+    padding: 10px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
@@ -342,6 +342,17 @@ footer {
     color: var(--color-white);
 }
 
+.information a {
+    color: var(--color-white);
+    font-size: 1.3rem;
+    text-decoration: underline;
+    padding: 5px 0;
+}
+
+.information a:hover {
+    color: var(--color-button);
+    text-decoration: inherit;
+}
 .social {
     display: flex;
     gap: 15px;

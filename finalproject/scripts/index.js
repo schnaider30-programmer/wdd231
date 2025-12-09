@@ -19,16 +19,15 @@ let modified = document.lastModified;
 document.querySelector("#last-modified").innerHTML = `Last Modification: ${modified}`;
 
 async function fetchData() {
-
-    const response = await fetch(url);
-    const data = await response.json();
-    const shuttle = shuttleArray(data.docs)
-    console.log("hi");
-    displayBooks(shuttle, 3);
-
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        const shuttle = shuttleArray(data.docs)
+        displayBooks(shuttle, 3);
+    }
+    catch(error) {
+        throw new Error(`Your request failed. Error type: ${error}`);
+    }
 }
-
-
-
 
 fetchData();

@@ -20,7 +20,7 @@ function displayBooks(arrayData, sliceCount) {
 }
 
 export function shuttleArray(array) {
-    for (let index = array.lenght - 1; index > 0; index--) {
+    for (let index = array.length - 1; index > 0; index--) {
         let randomIndex = Math.floor(Math.random() * (index + 1));
         [array[index], array[randomIndex]] = [array[randomIndex], array[index]];
     }

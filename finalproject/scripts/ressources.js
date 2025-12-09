@@ -21,11 +21,15 @@ document.querySelector("#last-modified").innerHTML = `Last Modification: ${modif
 fetchData();
 
 async function fetchData() {
-
-    const response = await fetch(url);
-    const data = await response.json();
-    const shuttle = shuttleArray(data.docs)
-    console.log("hi");
-    displayBooks(shuttle, 15);
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        const shuttle = shuttleArray(data.docs)
+        console.log(data.docs)
+        displayBooks(shuttle, 15);
+    }
+    catch (error) {
+        throw new Error(`Your request failed. Error type: ${error}`);
+    }
 }
 

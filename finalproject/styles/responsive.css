@@ -1,5 +1,10 @@
 /* *************** Responsive ************** */
-
+@media (max-width: 320px) {
+    .ressource-card {
+            padding: 0;
+            margin: 0;
+        }
+}
 @media (max-width: 680px) {
 
     header {
@@ -25,6 +30,7 @@
             "subject"
         ;
         grid-template-columns: 250px;
+        margin: 0;
     }
 
     .ressource-card img {
