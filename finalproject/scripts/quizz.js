@@ -39,6 +39,12 @@ if (learnMoreLink && infoContent) {
             const student = document.createElement('p');
             student.textContent = `Student: ${data.user}`;
 
+            const email = document.createElement('p');
+            email.textContent = `Email: ${data.userEmail || "Your email was not saved yet"} `;
+
+            const phoneNumber = document.createElement('p');
+            phoneNumber.textContent = `Phone Number: ${data.userPhone || "Your phone number was not saved yet"}`;
+
             const score = document.createElement('p');
             score.textContent = `Score: ${data.score} / 10`;
 
@@ -50,6 +56,8 @@ if (learnMoreLink && infoContent) {
             infoContent.appendChild(explanation);
             infoContent.appendChild(lastAttempt);
             infoContent.appendChild(student);
+            infoContent.appendChild(email);
+            infoContent.appendChild(phoneNumber);
             infoContent.appendChild(score);
             infoContent.appendChild(date);
         } catch (error) {

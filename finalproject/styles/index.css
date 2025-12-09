@@ -140,6 +140,7 @@ header span {
     padding: 5px;
     border-radius: 10px;
     color: var(--color-white);
+    width: fit-content;
 }
 
 .btn:hover {

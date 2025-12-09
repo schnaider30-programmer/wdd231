@@ -23,24 +23,33 @@ const email = params.get('email');
 const phone = params.get('phone');
 
 // Calcul du score
-let score = 0;
-if (params.get('q1') === 'a') score++;
-if (params.get('q2') === 'b') score++;
-if (params.get('q3') === 'a') score++;
-if (params.get('q4') === 'c') score++;
-if (params.get('q5') === 'a') score++;
-if (params.get('q6') === 'b') score++;
-if (params.get('q7') === 'b') score++;
-if (params.get('q8') === 'c') score++;
-if (params.get('q9') === 'a') score++;
-if (params.get('q10') === 'a') score++;
+
+// let score = 0;
+// if (params.get('q1') === 'a') score++;
+// if (params.get('q2') === 'b') score++;
+// if (params.get('q3') === 'a') score++;
+// if (params.get('q4') === 'c') score++;
+// if (params.get('q5') === 'a') score++;
+// if (params.get('q6') === 'b') score++;
+// if (params.get('q7') === 'b') score++;
+// if (params.get('q8') === 'c') score++;
+// if (params.get('q9') === 'a') score++;
+// if (params.get('q10') === 'a') score++;
+
+const correctAnswers = ['a', 'b', 'a', 'c', 'a', 'b', 'b', 'c', 'a', 'a']; 
+
+const userAnswers = correctAnswers.map((_, i) => params.get(`q${i + 1}`));
+
+const goodAnswers = userAnswers.filter((ans, i) => ans === correctAnswers[i]);
+
+const score = goodAnswers.length;
 
 // Affichage des résultats
 const resultsDiv = document.getElementById('results');
 if (resultsDiv) {
     resultsDiv.innerHTML = `
     <div class="card">
-      <h2>Participant Information</h2>
+      <h2>Quizz Taker Information</h2>
       <p><strong>First Name:</strong> ${firstName || ''}</p>
       <p><strong>Last Name:</strong> ${lastName || ''}</p>
       <p><strong>Email:</strong> ${email || ''}</p>
@@ -56,8 +65,10 @@ if (resultsDiv) {
 if (firstName && lastName) {
     const userKey = `${firstName} ${lastName}`;
     localStorage.setItem('quizScore', JSON.stringify({
-        user: userKey,
-        score: score,
-        date: new Date().toLocaleString()
+      user: userKey,
+      userEmail: email,
+      userPhone: phone,
+      score: score,
+      date: new Date().toLocaleString()
     }));
 }

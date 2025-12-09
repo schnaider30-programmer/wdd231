@@ -17,6 +17,11 @@ main h1::after {
     border-radius: 2px;
 }
 
+main > div {
+    max-width: fit-content;
+    margin: auto;
+}
+
 /* Conteneur des résultats */
 #results {
     display: flex;
@@ -35,6 +40,15 @@ main h1::after {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     font-family: var(--body-font);
     animation: fadeIn 0.3s ease-out;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.btn a {
+    display: inline-block;
+    color: var(--color-white)
 }
 
 /* Animation d’apparition */
